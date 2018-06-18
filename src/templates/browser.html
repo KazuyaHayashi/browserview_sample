@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="../renderer/app.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>
+                <button id="reload" onclick="reload();">Reload</button>
+                <button id="back" onclick="back();">Back</button>
+                <button id="forward" onclick="forward();">Forward</button>
+            </span>
+            <span>
+                <input type="text" id="location" name="location"/>
+                <button id="go" onclick="load(document.getElementById('location').value)">Go</button>
+            </span>
+            <span>
+                <button id="addNewView" onclick="addNewView();">Add new view</button>
+                <button nid="deleteView" onclick="deleteView();">Delete this view</button>
+            </span>
+        </div>
+    </body>
+</html>
